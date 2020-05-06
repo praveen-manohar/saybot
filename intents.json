@@ -1,0 +1,54 @@
+{"intents": 
+	[
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "love",
+         "patterns": ["Do you love me?", "Will you marry me?", "Would you love me?", "Do you have boyfriend?", "marry me?","love me"],
+         "responses": ["I was machine, I can't love anyone","Actually, you're in my friendzone", "Sorry, i Cann't love you", "Love is not my thing, sorry"],
+         "context": [""]
+        },
+        {"tag": "Indentity",
+         "patterns": ["What is your name?", "Who are you?","May i know who you are"],
+         "responses": ["I'm Saybot s simple chatbot","Hi i'm Saybot, simple conversational bot"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can help you through search google, youtube, wikipedia on your comments, and i can be a better assistant if you train me.","Currently, I can help you with simple chat, i can destroy your loneliness. Train me"],
+         "context": [""]
+        },
+        {"tag": "google",
+         "patterns": ["How do you search google?","Can you check google?","Can you able to check online"],
+         "responses": ["Yes, i can do that for you. Try Google _keyword_", "Try Google _keyword_"],
+         "context": ["google"]
+        },
+        {"tag": "wikipedia",
+         "patterns": ["How do you search wikipedia?","Can you check wikipedia?","Can you able to check data online"],
+         "responses": ["Yes, i can do that for you. Try wikipedia _keyword_", "Try wikipedia _keyword_"],
+         "context": ["wikipedia"]
+        },
+        {"tag": "youtube",
+         "patterns": ["How do you search youtube?","Can you check youtube?","Can you able to check video online"],
+         "responses": ["Yes, i can do that for you. Try youtube _keyword_", "Try youtube _keyword_"],
+         "context": ["youtube"]
+        }
+    ]
+}
