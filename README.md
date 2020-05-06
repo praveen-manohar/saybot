@@ -10,23 +10,22 @@ You can change your file names, you can decide what you want. bot_brain -> maste
    > Open run.py file there you can see the files.
 
 **To run on Terminal**
+``` python
+import os
+import saybot as sb
 
->  import os
->  import saybot as sb
+tob = sb.Saybot()
 
->  tob = sb.Saybot()
-
->  def sam():
->   user = input()
->   print (tob.response(user, 'bot_brain.h5','intents.json'))
->   sam()
-
-> def start():
->   if os.path.exists("bot_brain.h5"):
->       sam()
->   else:
->  	    print(sb.trains('intents.json','bot_brain.h5'))
->   	start()
-
->  if __name__ == "__main__":
->    start()
+def sam():
+   user = input()
+   print(tob.response(user,'bot_brain.h5','intents.json'))
+   sam()
+def start():
+   if os.path.exists("bot_brain.h5"):
+      sam()
+   else:
+      print(sb.trains('intents.json','bot_brain.h5'))
+      start()
+if __name__ = "__main__":
+   start()
+  ```
